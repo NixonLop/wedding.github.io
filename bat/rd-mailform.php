@@ -65,6 +65,13 @@ try {
             $template);
     }
 
+    if (isset($_POST['food'])) {
+        $template = str_replace(
+            array("<!-- #{Food} -->"),
+            array("Food:", $_POST['food']),
+            $template);
+    }
+
     // In a regular expression, the character \v is used as "anything", since this character is rare
     preg_match("/(<!-- #\{BeginInfo\} -->)([^\v]*?)(<!-- #\{EndInfo\} -->)/", $template, $matches, PREG_OFFSET_CAPTURE);
     foreach ($_POST as $key => $value) {
