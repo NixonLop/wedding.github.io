@@ -1,0 +1,8 @@
+{
+  "useSmtp": true,
+  "host": "mail.hobson-kindgren.com",
+  "port": 465,
+  "username": "demo@hobson-kindgren.com",
+  "password": "S-p7BOw(9Y#+",
+  "recipientEmail": "demo@hobson-kindgren.com"
+}
